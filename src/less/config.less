@@ -1,0 +1,93 @@
+// USER VARIABLES SECTION
+
+@accent: #5a9f30; // Accent Color
+@fontsize: 18px; // Body Font Size
+@textcolor: #5b5b5b; // Text Color
+@textcolorDark: #000; // Text Color
+@white: #fff; // Text Color
+@mainfamily: 'adderleybold', sans-serif; // Main Font Family
+
+
+// FONTS LOAD SECTION
+
+@font-face {
+    font-family: 'adderleybold';
+    src: url('../fonts/adderley_bold-webfont.woff2') format('woff2'),
+        url('../adderley_bold-webfont.woff') format('woff');
+	font-display: swap;
+	font-weight: 500;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'calibribold';
+    src: url('../fonts/Calibri-Bold.woff2') format('woff2'),
+        url('../Calibri-Bold.woff2') format('woff');
+	font-display: swap;
+	font-weight: 500;
+    font-style: normal;
+  }
+
+// GENERAL DOCUMENT STYLES
+
+.reset();
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+.container {
+	.wrapper();
+}
+
+::placeholder {
+	color: @textcolor;
+}
+
+::selection {
+	background-color: @accent;
+	color: #fff;
+}
+
+input,
+textarea {
+	outline: none;
+
+	&:focus:required:invalid {
+		border-color: red
+	}
+
+	&:required:valid {
+		border-color: green
+	}
+}
+// html {
+// 	scroll-behavior: smooth;
+// }
+
+body {
+	font-size: @fontsize;
+	min-width: 320px;
+	position: relative;
+	// line-height: 1.65;
+	font-family: @mainfamily;
+	font-weight: normal;
+	// overflow-x: hidden;
+  	color: @textcolor;
+	  // letter-spacing: 0.01em;
+}
+
+input, button {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+}
+
+a {
+	color: inherit;
+	text-decoration: none;
+}
+
+

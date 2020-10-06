@@ -1,0 +1,208 @@
+.hero-section {
+    background: url(../img/hero-bg.jpg) no-repeat center/cover;
+    background-attachment: fixed;
+    background-color: rgba(0, 0, 0, 0.6);;
+}
+
+.header {
+    &--sticky {
+        // background-color: #2b2b2b;
+        position: fixed;
+        top: 0;
+        left: 0;
+        bottom: auto;
+        opacity: 1;
+        z-index: 10;
+        // padding: 5px 0!important;
+        width: 100%;
+        animation: slideInDown .5s 1 ease-in-out;
+
+        .header__top {
+            background-color: rgba(0, 0, 0, 0.9);
+        }
+    }
+
+
+    .header__top {
+        font-size: 20px;
+        .md(font-size, 16px);
+        color: @white;
+        background-color: rgba(0, 0, 0, 0.6);
+
+        .header__wrapper {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            min-height: 50px;
+        }
+
+        .header__logo {
+            width: 140px;
+            .sm(width, 120px);
+            height: auto;
+        }
+
+        .header__contacts, .header__social, .header__social a, .header__mail a {
+            display: flex;
+            align-items: center;
+
+            img {
+                margin-right: 5px;
+                width: 22px;
+                height: auto;
+            }
+        }
+
+        .header__social {
+            .lg(display, none);
+            a {
+                margin-right: 27px;
+            }
+            
+        }
+
+        .header__mail {
+            .lg(display, none);
+
+            a {
+                img {
+                    width: 32px;
+                    height: auto;
+                }
+            }
+            
+        }
+    }
+
+    .header__bottom {
+        
+        .container{
+            background-color: #efefef;
+        }
+    }
+}
+
+.header__menu {
+    margin-left: 160px;
+    .lg(margin-left, 0);
+    // min-height: 50px;
+    display: flex;
+    .sm(justify-content, space-between);
+    flex-wrap: wrap;
+    align-items: center;
+    
+    li {
+        padding: 13px 10px;
+        .sm(padding, 5px);
+        border-bottom: 5px solid transparent;
+        transition: all 0.5s;
+
+        &:hover {
+            color: @accent;
+            background-color: @white;
+            border-bottom: 5px solid @accent;
+        }
+    }
+
+    a {
+        text-transform: uppercase;
+        font-size: 13px;
+        .sm(font-size, 11px);
+        font-weight: bold;
+    }
+}
+
+.hero {
+    .lg-block({
+        background-color: rgba(0, 0, 0, 0.35);
+    });
+}
+
+.hero__wrapper--main {
+    .row-flex();
+    // align-items: center;
+}
+
+.hero__slider {
+    .col();
+    .size(5);
+    .size-lg(12);
+    position: relative;
+    background: rgba(0, 0, 0, 0.35);
+    padding: 20px;
+    height: 100%;
+    margin-left: -10px;
+    .lg-block({
+        margin: 0 auto;
+        background: none;
+    });
+}
+
+.hero__item {
+    color: @white;
+
+    p {
+        // margin: 0 5px;
+        padding: 5px;
+        font-size: 16px;
+        font-weight: bold;
+        line-height: 24px;
+        text-transform: uppercase;
+        margin-bottom: 15px;
+    }
+}
+.hero__img {
+    .col();
+    .size(7);
+    .size-lg(12);
+
+    text-align: center;
+    .lg(order, -1);
+    
+    img {
+        width: 530px;
+        .sm(width, 100%);
+        height: auto;
+    }
+}
+
+.advantage {
+    background-color: rgba(0, 0, 0, 0.35);
+    .lg(display, none);
+}
+
+.advantage__wrapper {
+    .row-flex();
+    justify-content: space-between;
+}
+
+.advantage__item {
+    .col();
+    .size(2.4);
+
+    padding: 15px 10px;
+    // min-height: 250px;
+    font-size: 16px;
+    font-family: 'calibribold', sans-serif;;
+    color: @white;
+    text-align: center;
+
+    img {
+        width: 65px;
+        height: 65px;
+        // margin-bottom: 3px;
+    }
+}
+
+@keyframes slideInDown {
+    from {
+      -webkit-transform: translate3d(0, -100%, 0);
+              transform: translate3d(0, -100%, 0);
+      visibility: visible;
+    }
+    to {
+      -webkit-transform: translate3d(0, 0, 0);
+              transform: translate3d(0, 0, 0);
+    }
+  }
