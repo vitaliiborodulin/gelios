@@ -1,7 +1,7 @@
 .hero-section {
     background: url(../img/hero-bg.jpg) no-repeat center/cover;
     background-attachment: fixed;
-    background-color: rgba(0, 0, 0, 0.6);;
+    background-color: rgba(0, 0, 0, 0.6);
 }
 
 .header {
@@ -18,7 +18,7 @@
         animation: slideInDown .5s 1 ease-in-out;
 
         .header__top {
-            background-color: rgba(0, 0, 0, 0.9);
+            background-color: rgba(0, 0, 0, 0.9)!important;
         }
     }
 
@@ -98,7 +98,7 @@
         border-bottom: 5px solid transparent;
         transition: all 0.5s;
 
-        &:hover {
+        &:hover, .active {
             color: @accent;
             background-color: @white;
             border-bottom: 5px solid @accent;
@@ -184,7 +184,7 @@
     padding: 15px 10px;
     // min-height: 250px;
     font-size: 16px;
-    font-family: 'calibribold', sans-serif;;
+    font-family: 'calibribold', sans-serif;
     color: @white;
     text-align: center;
 

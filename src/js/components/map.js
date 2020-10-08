@@ -12,7 +12,7 @@ let map_loaded = false;
 
 function start_lazy_map() {
     if (!map_loaded) {
-        let map_block = document.querySelector('#ymap_lazy');
+        let map_block = document.querySelector('#map_container iframe');
         map_loaded = true;
         map_block.setAttribute('src', map_block.getAttribute('data-src'));
         map_block.removeAttribute('data_src');

@@ -7,6 +7,7 @@ $(function(){
 
    //= components/header.js
    //= components/slider.js
+   //= components/map.js
    //= components/popup.js
 
   });
