@@ -2,11 +2,18 @@
     <div class="popup-wrapper">
         <form class="popup-form">
             <div class="popup-form__close">&times;</div>
-            <div class="popup-form__header">Укажите Ваши контактные данные</div>
-            <input class="popup-form__input" type="text" name="name" placeholder="Ваше имя" required>
-            <input class="popup-form__input" type="tel" name="tel" placeholder="Ваш телефон" required>
-            <input class="btn popup-form__btn" type="submit" value="Заказать звонок"></input>
-            <div class="popup-form__bottom">Контактные данные не будут переданы третьим лицам</div>
+            <div class="popup-form__header">Форма обратной связи</div>
+            <input class="popup-form__input" type="text" name="fio" placeholder="Фамилия Имя Отчество" required>
+            <input class="popup-form__input" type="tel" name="tel" placeholder="Телефон" required>
+            <input class="popup-form__input" type="email" name="mail" placeholder="Почта" required>
+            <select class="popup-form__input" name="prod">
+                <option selected>Выберите интересующий продукт</option>
+                <option value="">One</option>
+                <option value="">Two</option>
+                <option value="">Three</option>
+            </select>
+            <textarea class="popup-form__input" name="text" cols="30" rows="10" placeholder="Коментарий"></textarea>
+            <input class="btn popup-form__btn" type="submit" value="Отправить"></input>
         </form>
     </div>
 </div>
