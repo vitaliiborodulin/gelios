@@ -1,19 +1,33 @@
 <div class="popup-overlay">
     <div class="popup-wrapper">
-        <form class="popup-form">
-            <div class="popup-form__close">&times;</div>
-            <div class="popup-form__header">Форма обратной связи</div>
-            <input class="popup-form__input" type="text" name="fio" placeholder="Фамилия Имя Отчество" required>
-            <input class="popup-form__input" type="tel" name="tel" placeholder="Телефон" required>
-            <input class="popup-form__input" type="email" name="mail" placeholder="Почта" required>
-            <select class="popup-form__input" name="prod">
-                <option selected>Выберите интересующий продукт</option>
-                <option value="">One</option>
-                <option value="">Two</option>
-                <option value="">Three</option>
-            </select>
-            <textarea class="popup-form__input" name="text" cols="30" rows="10" placeholder="Коментарий"></textarea>
-            <input class="btn popup-form__btn" type="submit" value="Отправить"></input>
-        </form>
+        <div class="wpcf7">
+            <form class="wpcf7-form">
+                <div class="wpcf7__close">&times;</div>
+                <div class="wpcf7__header">Форма обратной связи</div>
+               <p>
+                    <span class="wpcf7-form-control-wrap fio">
+                        <input class="wpcf7-form-control" type="text" name="fio" placeholder="Фамилия Имя Отчество" required>
+                    </span><br>
+                    <span class="wpcf7-form-control-wrap tel">
+                        <input class="wpcf7-form-control" type="tel" name="tel" placeholder="Телефон" required>
+                    </span><br>
+                    <span class="wpcf7-form-control-wrap mail">
+                        <input class="wpcf7-form-control" type="email" name="mail" placeholder="Почта" required>
+                    </span><br>
+                    <span class="wpcf7-form-control-wrap prod">
+                        <select class="wpcf7-form-control wpcf7-select" name="prod">
+                            <option value></option>
+                            <option value="One">One</option>
+                            <option value="Two">Two</option>
+                            <option value="Three">Three</option>
+                        </select>
+                    </span><br>
+                    <span class="wpcf7-form-control-wrap text">
+                        <textarea class="wpcf7-form-control wpcf7-textarea" name="text" cols="40" rows="10" placeholder="Комментарий"></textarea>
+                    </span><br>
+                    <input class="wpcf7-form-control wpcf7-submit" type="submit" value="Отправить"></input>
+               </p>
+            </form>
+        </div>
     </div>
 </div>

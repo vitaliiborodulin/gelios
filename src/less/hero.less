@@ -1,11 +1,12 @@
 .hero-section {
-    background: url(../img/hero-bg.jpg) no-repeat center;
+    background: url(../img/hero-bg0.jpg) no-repeat center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
     background-attachment: fixed;
     height: auto;
     background-color: rgba(0, 0, 0, 0.6);
+    // background-image: url(../img/hero-bg1.jpg);
 
     .md-block ({
         background-attachment: scroll;
@@ -42,10 +43,12 @@
 
 .hero__item {
     color: @white;
+    padding: 60px 0;
+    .lg(padding, 0);
 
     .hero__text {
         // margin: 0 5px;
-        padding: 5px;
+        padding: 10px;
         font-size: 1rem;
         line-height: 1.5;
         text-transform: uppercase;
@@ -77,6 +80,7 @@
 .advantage__wrapper {
     .row-flex();
     justify-content: space-between;
+    padding: 37px 55px;
 }
 
 .advantage__item {
@@ -86,14 +90,15 @@
     padding: 15px 10px;
     // min-height: 250px;
     font-size: 1rem;
+    line-height: 1.5;
     // font-family: 'calibribold', sans-serif;
     color: @white;
     text-align: center;
 
     img {
-        width: 65px;
-        height: 65px;
-        // margin-bottom: 3px;
+        width: 95px;
+        height: 95px;
+        margin-bottom: 1rem;
     }
 }
 

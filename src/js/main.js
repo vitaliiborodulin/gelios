@@ -4,11 +4,12 @@
 $(function(){
 
   //= components/burger.js
-    //= components/popup.js
-    //= components/slider.js
-    //= components/header.js
-    //= components/readmore.js
-    //= components/map.js
+  //= components/popup.js
+  //= components/slider.js
+  //= components/header.js
+  //= components/readmore.js
+  //= components/map.js
+  //= components/maskedInput.js
 
    if ($(window).width() < 600) {
       $(".owl-stage-outer").readmore({

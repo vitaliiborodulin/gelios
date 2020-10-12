@@ -1,4 +1,3 @@
-
 //anchor animate
 $('body').on('click', '[href*="#"]', function(e){
     var fixed_offset = 200;
