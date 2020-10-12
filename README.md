@@ -1,4 +1,4 @@
-# mg
+# Gelios group
 
 ## Technologies
 
