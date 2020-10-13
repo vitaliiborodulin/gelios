@@ -43,7 +43,7 @@
             img {
                 margin-right: 5px;
                 width: 22px;
-                height: auto;
+                height: 23px;
             }
 
         }
@@ -60,10 +60,10 @@
                     position: absolute;
                     // width: 100%;
                     padding: 10px;
-                    z-index: 3;
+                    z-index: 4;
                     bottom: -45px;
                     right: -15px;
-                    background-color: rgba(0, 0, 0, 0.7);
+                    background-color: rgba(0, 0, 0, 1);
                 }
             }
         }
@@ -75,12 +75,12 @@
             &--open {
                 display: flex!important;
                 position: absolute;
-                // width: 100%;
+                width: 100%;
                 padding: 10px;
                 z-index: 3;
                 bottom: -45px;
-                right: 149px;
-                background-color: rgba(0, 0, 0, 0.7);
+                left: -15px;
+                background-color: rgba(0, 0, 0, 1);
             }
             a {
                 margin-right: 27px;
@@ -98,7 +98,10 @@
                     width: 32px;
                     height: auto;
 
-                    .sm(width, 22px);
+                    .sm-block({
+                        width: 22px;
+                        margin-top: -5px;
+                    });
                 }
             }
             

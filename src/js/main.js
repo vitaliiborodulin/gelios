@@ -15,8 +15,8 @@ $(function(){
       $(".owl-stage-outer").readmore({
         maxHeight: 50,
         moreLink:
-          '<a href="#" style="margin:10px 5px;color:#fff">>></a>',
-        lessLink: '<a href="#" style="margin:10px 5px;color:#fff" ><<</a>',
+          '<a href="#" style="margin:10px;color:#fff">>></a>',
+        lessLink: '<a href="#" style="margin:10px;color:#fff" ><<</a>',
       });
     }
 
